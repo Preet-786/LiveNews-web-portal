@@ -1,0 +1,78 @@
+/* CSS Document */
+	
+/*.navbar{
+	background-color: #222629;
+}*/
+
+.dropdown-menu{
+	overflow-y:auto; 
+	max-height:250px;
+}
+
+/* equal card height */
+.row-equal > div[class*='col-'] {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.row-equal .card {
+   width: 100%;
+}
+
+/* ensure equal card height inside carousel */
+.carousel-inner>.row-equal.active, 
+.carousel-inner>.row-equal.next, 
+.carousel-inner>.row-equal.prev {
+    display: flex;
+}
+
+/* prevent flicker during transition */
+.carousel-inner>.row-equal.active.left, 
+.carousel-inner>.row-equal.active.right {
+    opacity: 0.5;
+    display: flex;
+}
+
+/*.carousel-control-prev{
+	height: 5%;
+	width: 3%;
+	top: calc(50%-25px);
+	background-color:red;
+	opacity: 0.8;
+	margin-top: auto;
+	margin-bottom: auto;
+}*/
+
+
+/* control image height */
+.card-img-top {
+    height: 250px;
+    overflow:hidden;
+}
+
+
+.card-header{color:dodgerblue}
+
+@media (max-width: 600px) {
+	  #postsCarousel{
+	  	display: none;
+	  }
+	  #postsCarouselMobile{
+	  	display: block;
+	  }
+	  .nav-item{
+	  	font-size: 15px;
+	  }
+	  .heading{
+	  	font-size: 25px;
+	  }
+ }
+@media (min-width: 601px){
+	  #postsCarousel{
+	  	display: block;
+	  }
+	  #postsCarouselMobile{
+	  	display: none;
+	  }
+ }
+
